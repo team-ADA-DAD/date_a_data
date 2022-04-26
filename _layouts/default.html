@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head >
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>  
+
+    <div class="hero-image" style="background-image: linear-gradient(rgba(117, 117, 117, 0.5), rgba(253, 253, 253, 0.5)), url('{{page.background}}');">
+      <div class="hero-text">
+          {{page.title}}
+      </div>
+    </div>
+  
+    <!--Add {{site.baseurl}} here to github page-->
+    <link rel= "stylesheet" href= "{{site.baseurl}}/assets/css/styles.css">
+    {% feed_meta %}
+    {% seo %}
+    
+  </head>
+
+
+  <body data-spy="scroll" data-target=".navbar" data-offset="50" >
+
+      {{content}}
+
+  </body>
+
+  <footer>
+    <p style="text-align: center"> Copyright &copy; 2021 Date A Data group 
+    <a href="https://github.com/epfl-ada/ada-2021-project-date-a-data"><i class="fa fa-github" ></i></a></p>
+  </footer> 
+</html>
