@@ -1,4 +1,4 @@
-baseurl: /date_a_data
+baseurl: /team-ADA-DAD
 defaults:
     - scope:
         path: ""
